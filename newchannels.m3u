@@ -1,0 +1,120 @@
+#EXTM3U
+
+# Danish Public Broadcasting
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",DR1
+https://drlivedr1hls.akamaized.net/hls/live/2113625/drlivedr1/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",DR2
+https://drlivedr2hls.akamaized.net/hls/live/2113623/drlivedr2/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",Ramasjang
+https://drlivedrrhls.akamaized.net/hls/live/2113621/drlivedrr/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",DRTV Ekstra
+https://drlivedrtvbhls.akamaized.net/hls/live/2113611/drlivedrtvb/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",DRTV Live
+https://drlivedrtvchls.akamaized.net/hls/live/2113608/drlivedrtvc/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",DRTV Event
+https://drtvdeventhls.akamaized.net/hls/live/2024976/drtvd/6.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Danish Public Broadcasting",DR TV-AVISEN
+https://drlivedrtvahls.akamaized.net/hls/live/2113613/drlivedrtva/master.m3u8
+
+# TV2 Network
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_9/__c/flow_10/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Charlie
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_10/__c/flow_1/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Comedy
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_17/__c/flow_16/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 News
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_9/__c/flow_4/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Echo
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_9/__c/flow_2/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Fri
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_11/__c/flow_3/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Sport
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_10/__c/flow_5/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Sport x
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_11/__c/flow_6/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Oiii
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_17/__c/flow_15/__op/nd/__f/dash.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Network",TV2 Guld
+https://tv2-play-ew-aws-arn-dash-a.akamaized.net/__cl/cg:default_15/__c/flow_17/__op/nd/__f/dash.m3u8
+
+# TV2 Regional
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV2 Nord
+https://livecdn.euw1-0005.jwplive.com/live/sites/yXh2UIbN/media/KFXZ5tL6/live.isml/.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV2 Kosmopol
+https://livecdn.euw1-0005.jwplive.com/live/sites/Y5KQeGwq/media/LHtkDR9N/live.isml/.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV2 Bornholm
+https://livecdn.euw1-0005.jwplive.com/live/sites/J42OBHtp/media/vvNWt4O9/live.isml/.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV2 Øst
+https://cdn.jwplayer.com/live/broadcast/DHG9G8xO.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV2 Fyn
+https://cdn.jwplayer.com/live/broadcast/igp9r9oc.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV2 Østjylland
+https://cdn.jwplayer.com/live/broadcast/Crk4qpBM.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV MidtVest
+https://stream-234128.castr.net/678b5d6b493e0151683146a7/live_67bfd520e2c311efa7fc8f032bc7fcee/rewind-3600.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="TV2 Regional",TV SYD
+https://cdn.jwplayer.com/live/broadcast/bcZFHqNK.m3u8
+
+# Rakuten TV
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Top - Rakuten TV
+https://df25393b91b344c0a3c3b682c31d7f18.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6055/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Action - Rakuten TV
+https://cb0ab09c5ecd4754acc6e0666bf158d7.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6074/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Komedie - Rakuten TV
+https://bac33ac7b4794d39a7112659d94c90de.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6189/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Drama - Rakuten TV
+https://5d9a92cd70fb4996a583030d27b74533.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6098/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Romantik - Rakuten TV
+https://romance-rakuten-tv-dk.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6742/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Nordiske Film - Rakuten TV
+https://4ea04bc10d9c42089131464743dabaee.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6302/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV",Familie - Rakuten TV
+https://8cc3d23ae2ed47b6b7ffce689848c2cb.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6226/master.m3u8
+
+# Rakuten TV Movies
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV Movies",Rakuten TV Action Movies
+https://bca5a421a70c46ad911efd0a4767c4bf.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6075/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV Movies",Rakuten TV Comedy Movies
+https://a300af98e00746e2acf2346f43e47bd1.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6191/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV Movies",Rakuten TV Drama Movies
+https://d7e8ee3c924d4305a0c1840fe94c5d36.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6102/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV Movies",Rakuten TV Family Movies
+https://758ee983d61e400381dea6fa8154f4e0.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6227/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV Movies",Rakuten TV Nordic Films
+https://4aa9ef08b70d4b0c8f3519c5950b1930.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6303/master.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Rakuten TV Movies",Rakuten TV Top Movies
+https://1d1b0d4cb6ae4c31985d13221795695b.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6057/master.m3u8
