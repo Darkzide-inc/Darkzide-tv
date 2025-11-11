@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Darkzide TV</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    body { margin:0; background:#0e1626; color:#fff; font-family:system-ui, Arial; }
+    header { padding:16px; font-size:22px; font-weight:700; display:flex; justify-content:space-between; }
+    #count { font-size:14px; opacity:.8; }
+    #grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:12px; padding:12px; }
+    .card { background:#1b2a45; border-radius:16px; padding:16px; display:flex; flex-direction:column; align-items:center; cursor:pointer; }
+    .logo { width:48px; height:48px; margin-bottom:10px; display:flex; align-items:center; justify-content:center; }
+    .name { text-align:center; font-size:16px; font-weight:700; }
+    #player { position:fixed; left:0; right:0; bottom:0; background:#0a121f; padding:10px; display:none; }
+    video { width:100%; max-height:40vh; background:black; }
+  </style>
+</head>
+<body>
+  <header><div>Darkzide TV</div><div id="count"></div></header>
+  <main id="grid"></main>
+  <section id="player"><video id="video" controls playsinline></video></section>
+  <script>
+    const PLAYLIST_URL = "https://raw.githubusercontent.com/Darkzide-inc/Darkzide-tv/main/newchannels.m3u";
+
+    async function loadPlaylist() {
+      const res = await fetch(PLAYLIST_URL);
+      const text = await res.text();
+      const channels = parseM3U(text);
+      render(channels);
+    }
+    function parseM3U(text) {
+      const lines = text.split(/\r?\n/), out = [];
+      for (let i=0;i<lines.length;i++) {
+        const l = lines[i].trim();
+        if (l.startsWith("#EXTINF:")) {
+          const head = l.replace("#EXTINF:","").trim();
+          const attrs = head.split(",")[0];
+          const name = head.split(",").slice(1).join(",").trim();
+          const url = (lines[i+1]||"").trim();
+          if (url && !url.startsWith("#")) {
+            const a = {}; [...attrs.matchAll(/([A-Za-z0-9-]+)="([^"]*)"/g)].forEach(m => a[m[1]]=m[2]);
+            out.push({ name: a["tvg-name"]||name||"Channel", url, logo: a["tvg-logo"]||"" });
+          }
+        }
+      }
+      return out;
+    }
+    function render(channels) {
+      document.getElementById("count").textContent = `${channels.length} kanaler`;
+      const grid = document.getElementById("grid"); grid.innerHTML = "";
+      channels.forEach(ch => {
+        const card = document.createElement("div"); card.className = "card"; card.onclick = () => play(ch);
+        const logo = document.createElement("div"); logo.className = "logo";
+        if (ch.logo) { const img=document.createElement("img"); img.src=ch.logo; img.style.width="48px"; img.style.height="48px"; img.style.borderRadius="8px"; logo.appendChild(img); }
+        else { logo.textContent = "📺"; }
+        const name = document.createElement("div"); name.className="name"; name.textContent=ch.name;
+        card.appendChild(logo); card.appendChild(name); grid.appendChild(card);
+      });
+    }
+    function play(ch) {
+      const video = document.getElementById("video");
+      document.getElementById("player").style.display = "block";
+      if (Hls.isSupported()) { const hls = new Hls(); hls.loadSource(ch.url); hls.attachMedia(video); }
+      else { video.src = ch.url; }
+      video.play();
+    }
+    loadPlaylist().catch(e => { document.getElementById("grid").textContent = "Kunne ikke indlæse: " + e; });
+  </script>
+</body>
+</html>

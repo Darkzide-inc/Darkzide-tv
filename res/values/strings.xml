@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TV Channels</string>
+    <string name="channel_logo">Channel logo</string>
+    <string name="play">Play</string>
+    <string name="back">Back</string>
+    <string name="pause">Pause</string>
+</resources>

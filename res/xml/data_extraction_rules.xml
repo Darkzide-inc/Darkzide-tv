@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!--
+        TODO: Configure cloud backup rules as appropriate.
+        See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+        for more information.
+        -->
+    </cloud-backup>
+</data-extraction_rules>
